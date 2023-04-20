@@ -1,0 +1,59 @@
+
+/* 전체 제어 */
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  color: #041A69;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+
+.inner {
+  /* width: 1200px; */
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 헤더 고정 */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #424242;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+header > .inner {
+  height: 70px;
+}
+
+header .logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+header .main-menu {
+  display: flex;
+  position: absolute;
+}
+header .main-menu .item .item__name {
+  display: block;
+  padding: 10px 30px 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #041A69;
+}
+header .main-menu .item .item__name:hover {
+  color: #7B98FF;
+  background-color: #041A69 ;
+  border-radius: 10px;
+}
+
+
+
