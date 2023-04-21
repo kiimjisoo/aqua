@@ -38,6 +38,7 @@ header .logo {
   position: absolute;
   top: 0;
   bottom: 0;
+  margin: auto 0;
 }
 /* 메인메뉴 수평 가운데 */
 header .main-menu {
@@ -45,7 +46,7 @@ header .main-menu {
   justify-content: center;
 }
 /* 하단메뉴 정렬 */
-header .main-menu .item {
+header .main-menu .item  {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,45 +60,42 @@ header .main-menu .item .item__name {
   color: #041A69;
   line-height: 50px;
 }
+
 /* 메인 메뉴 hover 색 변환 */
 header .main-menu .item .item__name:hover {
   color: #7B98FF;
+
+
+
   /* background-color: #041A69 ; */
   /* border-radius: 70%; */
 }
 
-/* 평소엔 하단 메뉴 가림 */
-header .main-menu .item .item__contents {
+header .main-menu .item ul {
   width: 100%;
-  display: none
+  background-color: rgba(250, 250, 250, 80);
+  /* background-color: orange; */
+  padding: 15px 10px;
+  font-size: 12px;
+  text-align: center;
+  display: none;
 }
 
 /* item hover 시 메뉴 보임 */
-header .main-menu .item:hover .item__contents {
+header .main-menu .item:hover ul {
   display: block;
 }
-/* 하단 메뉴 배경색 */
-header .main-menu .item .item__contents .contents__menu {
-  background-color: rgba(250, 250, 250, 80);
-  /* background-color: orange; */
-}
+
 /* 하단 메뉴 여백 */
-header .main-menu .item .item__contents .contents__menu > ul {
-  padding: 15px;
-  font-size: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/* 하단메뉴 li 여백 */
-header .main-menu .item .item__contents .contents__menu > ul > li {
-  padding: 10px;
-}
-/* li hover 시 글자색 변환 */
-header .main-menu .item .item__contents .contents__menu > ul > li:hover {
-  color: #7B98FF;
+header .main-menu .item > ul > li {
+  padding: 8px;
+  cursor: pointer;
 }
 
+/* li hover 시 글자색 변환 */
+header .main-menu .item > ul > li:hover {
+  color: #7B98FF;
+}
 
 
 /* search */
@@ -125,15 +123,49 @@ header .inner .search input:focus {
 }
 
 
-/* main-img */
+/* MAIN IMG */
+
 .main-slide {
+  /* margin-top: 70px; */
   height: 500px;
+  width: 1200px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  /* overflow: hidden; */
+  margin: 0 auto;
+}
+
+.main-slide img {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-slide .swiper {
+  height: 500px;
+  flex-shrink: 0;
+}
+.main-slide .swiper-slide {
+  opacity: 0.5;
+  transition: opacity 1s;
+  position: relative;
+}
+.main-slide .swiper-slide-active {
+  opacity: 1;
+}
+.main-slide .swiper-pagination {
+  position: absolute;
+  bottom: 40px;
+  z-index: 1;
 }
 
 
+
+
+/* .main-slide .siwper .swiper-slide {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+} */
 
 
 
