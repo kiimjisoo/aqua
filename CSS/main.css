@@ -225,7 +225,7 @@ header .inner .search input:focus {
   height: 500px;
   width: 1440px;
   margin: 0 auto;
-  background-color: #D9D9D9;
+  background-color: orange;
   position: relative;
 }
 .event .bg .right_contain {
@@ -234,14 +234,45 @@ header .inner .search input:focus {
 }
 
 .event .bg .left_contain {
-  width: 250px;
-  display: block;
-  padding: 100px 0 0 100px;
+  position: absolute;
+  width: 350px;
+  top: 150px;
+  left: 150px;
 }
 
 .event .bg .left_contain .content1 {
+  font-size: 25px;
+  color: black;
+  margin-bottom: 15px;
+}
+.event .bg .left_contain .content2 {
+  font-size: 55px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #0076ff;
 
 }
+.event .bg .left_contain .content3 {
+  font-size: 14px;
+  color: #7a7a7a;
+  margin-bottom: 10px;
+  line-height: 15px;
+}
+.event .bg .left_contain .more_btn {
+  width: 155px;
+  padding: 13px;
+  border: 1px solid #0076ff;
+  border-radius: 50px;
+  box-sizing: border-box;
+  background-color: #0076ff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.event .bg .right_contain {
+  
+}
+
 
 
 
