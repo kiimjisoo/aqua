@@ -11,9 +11,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   <!-- css 연결 -->
   <link rel="stylesheet" href="./css/main.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 
+  
 
+  <script src="./js/youtube.js"></script>
+  
   <script defer src="./js/java.js"></script>
 </head>
 <body>
@@ -90,44 +96,48 @@
 
 <!--  main img -->
   <section class="main-slide">
+
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="../IMG/slide_img_01.jpg" alt="수족관 메인 사진1">
-          <a href="javascript:void(0)" class=""></a>
+          <img src="./img/slide_img_01.jpg" alt="수족관 메인 사진1">
+          <a href="javascript:void(0)"></a>
         </div>
         <div class="swiper-slide">
-          <img src="../IMG/slide_img_2.png" alt="수족관 메인 사진2">
-          <a href="javascript:void(0)" class=""></a>
+          <img src="./img/slide_img_2.png" alt="수족관 메인 사진2">
+          <a href="javascript:void(0)"></a>
         </div>
         <div class="swiper-slide">
-          <img src="../IMG/slide_img_3.jpg" alt="수족관 메인 사진3">
-          <a href="javascript:void(0)" class=""></a>
+          <img src="./img/slide_img_3.jpg" alt="수족관 메인 사진3">
+          <a href="javascript:void(0)"></a>
         </div>
         <div class="swiper-slide">
-          <img src="../IMG/slide_img_4.jpg" alt="수족관 메인 사진4">
-          <a href="javascript:void(0)" class=""></a>
+          <img src="./img/slide_img_4.jpg" alt="수족관 메인 사진4">
+          <a href="javascript:void(0)"></a>
         </div>
-
-      </div>
-    </div>
-
-    <div class="swiper-pagination"></div>
-
-
-      <div class="swiper-button-prev">
-        <span class="material-icons">arrow_forward_ios</span>
       </div>
 
-      <div class="swiper-button-next">
-        <span class="material-icons">arrow_back_ios</span>
-      </div>
+      <div class="swiper-pagination"></div>
     
-
-
-
-
+      <div class="swiper-button-prev">
+        <span class="material-icons">skip_previous</span>
+      </div>
+      <div class="swiper-button-next">
+        <span class="material-icons">skip_next</span>
+      </div>
+      
   </section>
+
+<!--  youtube -->
+<section class="youtube">
+  
+  <div class="youtube__area">
+
+    <div id="player"></div>
+  </div>
+
+</section>
+
 
 </body>
 </html>

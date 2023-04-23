@@ -27,6 +27,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 9;
 }
 
 header > .inner {
@@ -44,6 +45,7 @@ header .logo {
 header .main-menu {
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 /* 하단메뉴 정렬 */
 header .main-menu .item  {
@@ -126,47 +128,51 @@ header .inner .search input:focus {
 /* MAIN IMG */
 
 .main-slide {
-  /* margin-top: 70px; */
-  height: 500px;
-  width: 1200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 0 auto;
+  margin-top: 70px;
 }
-
-.main-slide img {
-  display: flex;
-  flex-direction: row;
-}
-
 .main-slide .swiper {
+  width: 1440px;
   height: 500px;
-  flex-shrink: 0;
 }
-.main-slide .swiper-slide {
-  opacity: 0.5;
-  transition: opacity 1s;
+
+.main-slide .material-icons {
+  font-size: 40px;
+}
+
+.main-slide .swiper-button-next,
+.main-slide .swiper-button-prev {
+  color: #041A69;
+  transition: .3s;
+}
+.main-slide .swiper-button-next:hover,
+.main-slide .swiper-button-prev:hover {
+  color: #7B98FF;
+}
+.main-slide .swiper-button-prev::after, 
+.main-slide .swiper-button-next::after { 
+  display: none;
+}
+
+
+
+.youtube {
   position: relative;
+  height: 500px;
+  background-image: url(../img/bg_img.jpg);
+  overflow: hidden;
 }
-.main-slide .swiper-slide-active {
-  opacity: 1;
+.youtube .youtube__area {
+  width: 1920px;
+  height: 1080px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
 }
-.main-slide .swiper-pagination {
-  position: absolute;
-  bottom: 40px;
-  z-index: 1;
+
+#player {
+  width: 100%;
+  height: 100%;
 }
-
-
-
-
-/* .main-slide .siwper .swiper-slide {
-  display: flex; 
-  align-items: center;
-  justify-content: center;
-} */
-
-
-
-
