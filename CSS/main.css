@@ -292,25 +292,28 @@ header .inner .search input:focus {
   /* background-color: orange; */
 }
 .inform .contain1 {
-  margin: 47px 75px 0 0;
+  margin: 21px 75px 0 0;
 }
 .inform h2 {
   font-size: 25px;
   font-weight: 700;
   text-align: center;
   margin-top: 20px;
+  cursor: pointer;
 }
-
+.inform img {
+  cursor: pointer;
+}
 
 .inform .contain2 {
-  margin: 47px 75px 0 0;
+  margin: 21px 75px 0 0;
 }
 .inform .contain3 {
-  margin-top: 47px;
+  margin-top: 21px;
 }
 
 
-/* EVENT */
+/* EVENT2 */
 
 
 .event2 .bg {
@@ -322,12 +325,9 @@ header .inner .search input:focus {
 }
 .event2 .bg .left_contain2 {
   position: absolute;
-  top: 74px;
-  left: 206px; 
+  top: 131px;
+  left: 226px; 
 }
-
-/* EVENT2 */
-
 
 .event2 .bg .right_contain2 {
   position: absolute;

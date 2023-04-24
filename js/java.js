@@ -17,12 +17,9 @@ const swiper = new Swiper('.main-slide .swiper', {
   
   });
 
-  /*const swipers = new Swiper('.notice .swiper', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
-    autoplay: true.
-  
+// const swiper1 = new Swiper('.notice .swiper', {
+//     direction: 'vertical',
+//     loop: true,
+//     autoplay: true,
+// });  
 
-  });
-  */
