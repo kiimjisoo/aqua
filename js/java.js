@@ -23,3 +23,15 @@ const swiper = new Swiper('.main-slide .swiper', {
 //     autoplay: true,
 // });  
 
+
+const spyEls = document.querySelectorAll('section.scroll-spy');
+spyEls.forEach(function (spyEls) {
+  new ScrollMagic
+    .Scene({ 
+      triggerElement: spyEls, 
+      triggerHook: 0.1
+    })
+    .setClassToggle(spyEls, 'show')
+    .addTo(new ScrollMagic.Controller()); 
+});
+
