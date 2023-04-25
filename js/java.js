@@ -9,7 +9,7 @@ new Swiper('.notice .swiper', {
 }); 
 
 
-const swiperel = new Swiper('.main-slide .swiper', {
+new Swiper('.main-slide .swiper', {
   direction: 'horizontal',
   loop: true,
   autoplay: {
@@ -38,3 +38,10 @@ new ScrollMagic
   .addTo(new ScrollMagic.Controller()); 
 });
 
+
+const totopEl = document.querySelector('.go-top');
+totopEl.addEventListener('click', function () {
+  gsap.to(window, 0.5, {
+    scrollTo: 0
+  });
+})

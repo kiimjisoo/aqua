@@ -181,24 +181,20 @@ header .inner .search input:focus {
 
 .youtube {
   position: relative;
-  height: 500px;
-  /* background-image: url(../img/bg_img.jpg); */
-  overflow: hidden;
 }
 .youtube .youtube__area {
   width: 1440px;
   height: 500px;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-
+  margin: 0 auto;
 }
 
 #player {
   width: 100%;
   height: 100%;
+  /* width: 1920px;
+  height: 1080px; */
 }
 
 
@@ -216,11 +212,11 @@ header .inner .search input:focus {
   display: flex;
 }
 .notice .inner h2 {
+  position: absolute;
   line-height: 60px;
   font-weight: 700;
   font-size: 20px;
-  text-align: center;
-  /* margin-left: 50px; */
+  left: 10px;
 }
 .notice .inner .swiper {
   height: 60px;
@@ -237,9 +233,9 @@ header .inner .search input:focus {
   color: #041A69;
 }
 .notice .inner .notice_more {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 9px;
 }
 .notice .inner .notice_more .material-icons {
   color: #041A69;
@@ -303,9 +299,11 @@ header .inner .search input:focus {
   font-size: 18px;
   color: #fff;
   margin-top: 18px;
+  transition: .3s;
 }
 .event .bg .left_contain .more_btn:hover {
   background-color: #7B98FF;
+
 }
 
 
@@ -394,6 +392,8 @@ header .inner .search input:focus {
   font-size: 18px;
   color: #fff;
   margin-top: 18px;
+  transition: .3s;
+
 }
 .event2 .bg .right_contain2 .more_btn:hover {
   background-color: #7B98FF;
@@ -441,7 +441,7 @@ footer .footop .top-menu li::before {
   top: 2px;
   right: 80px;
 }
-  
+
 footer .footop .top-menu li:first-child::before {
   display: none;
 }
@@ -456,7 +456,6 @@ footer .footbt .btn-group .map {
   position: absolute;
   top: 5px;
   left: 654px;
-  
   width: 137px;
   padding: 13px;
   border: 1px solid; 
@@ -469,22 +468,75 @@ footer .footbt .btn-group .map {
 }
 footer .footbt .btn-group .map:hover {
   background-color: #6C7084;
+  transition: .3s;
 }
 
 footer .footbt .btm-menu {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  
 }
 footer .footbt .btm-menu li {
   margin-right: 28px;
   font-size: 12px;
 }
-
-
 footer .footbt .btm-menu li a {
   color: #d9d9d9;
+}
+
+
+
+
+/* 상단으로 */
+.go-top {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: #2A3E85;
+  cursor: pointer;
+  z-index: 10;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border-radius: 50%;
+}
+.go-top .material-icons {
+  position: absolute;
+  top: 15px;
+  left: 22px;
+  color: #fff;
+}
+.go-top  p {
+  position: absolute;
+  font-size: 14px;
+  top: 43px;
+  left: 23px;
+  color: #fff;
+}
+.reserve {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: #4F5D8F;
+  cursor: pointer;
+  z-index: 10;
+  position: fixed;
+  right: 30px;
+  bottom: 115px;
+  border-radius: 50%;
+}
+.reserve .material-icons {
+  position: absolute;
+  top: 13px;
+  left: 23px;
+  color: #fff;
+}
+.reserve  p {
+  position: absolute;
+  font-size: 12px;
+  top: 43px;
+  left: 12px;
+  color: #fff;
 }
 
 
