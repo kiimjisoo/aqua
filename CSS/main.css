@@ -526,7 +526,12 @@ footer .footbt .btm-menu li a {
   left: 12px;
   color: #fff;
 }
-
- .data:hover {
+.data:hover {
+  background-color: #1c2950;
+}
+.reserve:hover {
+  background-color: #1c2950;
+}
+.go-top:hover {
   background-color: #1c2950;
 }
