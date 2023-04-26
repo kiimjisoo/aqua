@@ -13,66 +13,62 @@
   <link rel="stylesheet" href="./css/plan.css">
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-      <!-- inner : 내용 가운데 정렬 -->
-      <div class="inner">
-        <!-- 로고 클릭하면 메인 페이지로 이동 -->
-        <a href="/" class="logo">
-          <img src="./img/Georgia-Aquarium-Emblem.png" alt="aquarium">
-        </a>
+  <!-- HEADER -->
+  <header>
+    <!-- inner : 내용 가운데 정렬 -->
+    <div class="inner">
+      <!-- 로고 클릭하면 메인 페이지로 이동 -->
+      <a href="/" class="logo">
+        <img src="./img/Georgia-Aquarium-Emblem.png" alt="aquarium">
+      </a>  
+      <!-- 메인 메뉴 -->
+      <ul class="main-menu">  
+        <li class="item">
+          <a href="javascript:void(0)" class="item__name">아쿠아리움</a>  
+            <ul>
+              <li>아쿠아리움 소개</li>
+              <li>홍보자료</li>
+              <li>층별안내</li>
+              <li>전시생물 소개</li>            
+            </ul>
+        </li> 
+        <li class="item">
+          <a href="javascript:void(0)" class="item__name">이용안내</a>
+            <ul>
+              <li>운영시간</li>
+              <li>이용요금</li>
+              <li>우대정보</li>
+              <li>편의시설</li>
+              <li>장애인 편의 제도</li>
+              <li>주차안내</li>
+            </ul>
+        </li>
   
-        <!-- 메인 메뉴 -->
-        <ul class="main-menu">
+        <li class="item">
+          <a href="javascript:void(0)" class="item__name">온라인예매</a>
+            <ul>
+              <li>이용권 예매</li>
+              <li>예매 확인/취소</li>
+            </ul>
+        </li>
   
-          <li class="item">
-            <a href="javascript:void(0)" class="item__name">아쿠아리움</a>
+        <li class="item">
+          <a href="javascript:void(0)" class="item__name">단체안내</a>
+            <ul>
+              <li>기업단체행사</li>
+              <li>사회공헌행사</li>
+              <li>문의 및 예약</li>
+              </ul>
+        </li>
   
-                <ul>
-                    <li>아쿠아리움 소개</li>
-                    <li>홍보자료</li>
-                    <li>층별안내</li>
-                    <li>전시생물 소개</li>            
-                </ul>
-          </li>
-  
-          <li class="item">
-            <a href="javascript:void(0)" class="item__name">이용안내</a>
-                <ul>
-                    <li>운영시간</li>
-                    <li>이용요금</li>
-                    <li>우대정보</li>
-                    <li>편의시설</li>
-                    <li>장애인 편의 제도</li>
-                    <li>주차안내</li>
-                </ul>
-          </li>
-  
-          <li class="item">
-            <a href="javascript:void(0)" class="item__name">온라인예매</a>
-                <ul>
-                    <li>이용권 예매</li>
-                    <li>예매 확인/취소</li>
-                </ul>
-          </li>
-  
-          <li class="item">
-            <a href="javascript:void(0)" class="item__name">단체안내</a>
-                <ul>
-                    <li>기업단체행사</li>
-                    <li>사회공헌행사</li>
-                    <li>문의 및 예약</li>
-                </ul>
-          </li>
-  
-          <li class="item">
-            <a href="javascript:void(0)" class="item__name">로그인</a>
-                <ul>
-                    <li>로그인</li>
-                    <li>회원가입</li>
-                    <li>마이페이지</li>
-                    <li>제휴안내</li>
-                </ul>
+        <li class="item">
+          <a href="javascript:void(0)" class="item__name">로그인</a>
+            <ul>
+              <li>로그인</li>
+              <li>회원가입</li>
+              <li>마이페이지</li>
+              <li>제휴안내</li>
+            </ul>
           </li>
         </ul>  
   
@@ -81,18 +77,65 @@
           <span class="material-icons">manage_search</span>
         </div>
       </div>
-    </header>
+  </header>
 
-    <nav>
-      <div class="navi">
+  <nav>
+    <div class="navi">
+      <a href="/index.html">
         <span class="material-icons">home</span>
-        <ul class="bar">
-          <li>이용안내</li>
-          <li>운영시간</li>
-        </ul>
-      </div>
-    </nav>
+      </a>
+      
+      <ul class="bar">
+        <li>이용안내</li>
+        <li>운영시간</li>
+      </ul>
+    </div>
+  </nav>
 
-    
+  <section class="grap">
+    <div class="inner">
+      <h2>아쿠아리움 운영시간</h2>
+
+      <div class="season">
+        <h3>동절기 운영시간</h3>
+        <table>
+          <tr>
+            <td>요일</td>
+            <td>시간</td>
+          </tr>
+          <tr>
+            <td>화, 수, 목</td>
+            <td>09:00 ~ 17:00 (입장마감 16:00)</td>
+          </tr>
+        </table>
+      </div>
+      
+    </div>
+
+
+
+
+
+
+
+
+
+<!-- 하단 고정 -->
+<div class="go-top">
+  <span class="material-icons">vertical_align_top</span>
+  <p>TOP</p>
+</div>
+<div class="reserve">
+  <span class="material-icons">book_online</span>
+  <p>예매하기</p>
+</div>
+<div class="data">
+  <a href="./index_plan.html">
+    <span class="material-icons">calendar_month</span>
+  </a>
+  <p>운영정보</p>
+</div>
+
+
 </body>
 </html>

@@ -123,6 +123,8 @@ nav .navi .material-icons {
   display: block;
   margin: 5px 15px;
   position: relative;
+  cursor: pointer;
+  color: #041A69;
 }
 nav .navi .material-icons::before {
   content: "";
@@ -135,17 +137,162 @@ nav .navi .material-icons::before {
   margin: auto;
   left: 53px;
 }
+nav .navi .material-icons:hover {
+  color: #7B98FF;
+}
+
 
 nav .navi .bar {
   display: flex;
   line-height: 60px;
   font-size: 20px;
   font-weight: 600;
-  
 }
 nav .navi .bar li {
   margin: 0 10px; 
 }
 nav .navi .bar li:last-child {
   color: #7B98FF;
+}
+
+.grap {
+  display: block;
+  position: relative;
+  top: 71px;
+  height: 150px;
+  margin: auto;
+}
+.grap .inner {
+  position: relative;
+  width: 1440px;
+}
+.grap .inner h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px 0;
+  background-color: orange;
+}
+.grap .inner h3 {
+  font-size: 25px;
+  margin: 10px 10px;
+}
+.grap .inner .season {
+  margin: auto;
+}
+
+.grap .inner table {
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+.grap .inner table td {
+  padding: 10px;
+  border: 1px solid;
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 상단으로 */
+
+.go-top {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: #2A3E85;
+  cursor: pointer;
+  z-index: 10;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border-radius: 50%;
+}
+.go-top .material-icons {
+  position: absolute;
+  top: 15px;
+  left: 22px;
+  color: #fff;
+}
+.go-top  p {
+  position: absolute;
+  font-size: 14px;
+  top: 43px;
+  left: 23px;
+  color: #fff;
+}
+.reserve {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: #4F5D8F;
+  cursor: pointer;
+  z-index: 10;
+  position: fixed;
+  right: 30px;
+  bottom: 115px;
+  border-radius: 50%;
+}
+.reserve .material-icons {
+  position: absolute;
+  top: 13px;
+  left: 23px;
+  color: #fff;
+}
+.reserve  p {
+  position: absolute;
+  font-size: 12px;
+  top: 43px;
+  left: 12px;
+  color: #fff;
+}
+.data {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: #7583b6;
+  cursor: pointer;
+  z-index: 10;
+  position: fixed;
+  right: 30px;
+  bottom: 197px;
+  border-radius: 50%;
+}
+.data .material-icons {
+  position: absolute;
+  top: 13px;
+  left: 23px;
+  color: #fff;
+}
+.data  p {
+  position: absolute;
+  font-size: 12px;
+  top: 43px;
+  left: 12px;
+  color: #fff;
+}
+.data:hover {
+  background-color: #1c2950;
+}
+.reserve:hover {
+  background-color: #1c2950;
+}
+.go-top:hover {
+  background-color: #1c2950;
 }
