@@ -45,3 +45,17 @@ totopEl.addEventListener('click', function () {
     scrollTo: 0
   });
 })
+
+
+const burgerEl = document.querySelector('.hamburger');
+const mediaEl = document.querySelector('.media_menu');
+const closeEl = document.querySelector('.close');
+
+burgerEl.addEventListener('click', function () {
+  mediaEl.classList.add('avtive');
+});
+
+closeEl.addEventListener('click', function() {
+  mediaEl.classList.remove('active');
+});
+

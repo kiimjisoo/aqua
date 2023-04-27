@@ -48,7 +48,7 @@ header {
   z-index: 9;
 }
 header > .inner {
-  width: 1440px;
+  max-width: 1100px;
   height: 70px;
 }
 header .logo {
@@ -79,6 +79,7 @@ header .main-menu .item .item__name {
   line-height: 50px;
 }
 
+
 /* 메인 메뉴 hover 색 변환 */
 header .main-menu .item .item__name:hover {
   color: #7B98FF;
@@ -101,8 +102,15 @@ header .main-menu .item > ul > li {
   padding: 8px;
   cursor: pointer;
 }
+header .main-menu .item > ul > li > a {
+  color: #041A69;
+}
+
 /* li hover 시 글자색 변환 */
 header .main-menu .item > ul > li:hover {
+  color: #7B98FF;
+}
+header .main-menu .item > ul > li > a:hover {
   color: #7B98FF;
 }
 
@@ -136,7 +144,7 @@ header .inner .search input:focus {
   margin-top: 70px;
 }
 .main-slide .swiper {
-  width: 1440px;
+  max-width: 1440px;
   height: 500px;
 }
 
@@ -164,7 +172,7 @@ header .inner .search input:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1440px;
+  max-width: 1100px;
   height: 500px;
   margin: 0 auto;
   overflow: hidden;
@@ -181,7 +189,7 @@ header .inner .search input:focus {
   background-color: #1c2950;
 }
 .notice .inner {
-  width: 1440px;
+  max-width: 1100px;
   height: 60px;
 }
 .notice .inner {
@@ -224,7 +232,7 @@ header .inner .search input:focus {
 
 .event .bg {
   height: 500px;
-  width: 1440px;
+  max-width: 1100px;
   margin: 0 auto;
   /* background-color: #d9d9d9; */
   position: relative;
@@ -237,7 +245,7 @@ header .inner .search input:focus {
 
 .event .bg .left_contain {
   position: absolute;
-  width: 350px;
+  max-width: 350px;
   top: 150px;
   left: 214px;
   text-align: center;
@@ -280,7 +288,7 @@ header .inner .search input:focus {
 
 /* info */
 .inform {
-  width: 1440px;
+  max-width: 1100px;
   height: 500px;
   margin: auto;
   display: flex;
@@ -314,7 +322,7 @@ header .inner .search input:focus {
 
 .event2 .bg {
   height: 500px;
-  width: 1440px;
+  max-width: 1100px;
   margin: 0 auto;
   /* background-color: #d9d9d9; */
   position: relative;
@@ -382,10 +390,13 @@ footer .footop .top-menu {
 }
 footer .footop .top-menu li {
   position: relative;
-  margin: 0 20px;
 }
 footer .footop .top-menu li a {
   color: #d9d9d9;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 15px;
+  display: block;
 }
 footer .footop .top-menu li a:hover {
   color: #7B98FF;
@@ -401,17 +412,14 @@ footer .footop .top-menu li::before {
   top: 0;
   bottom: 0;
   margin: auto;
-  right: 80px;
 }
-footer .footop .top-menu li:last-child::before {
-  right: 157px;
-}
+
 footer .footop .top-menu li:first-child::before {
   display: none;
 }
 
 footer .footbt .btn-group {
-  width: 1440px;
+  max-width: 1100px;
   height: 60px;
   position: relative;
   margin: 0 auto;
@@ -419,9 +427,17 @@ footer .footbt .btn-group {
 
 footer .footbt .btn-group .map {
   position: absolute;
-  top: 5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 140px;
+  /* top: 5px;
   left: 654px;
-  width: 137px;
+  width: 137px; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  text-align: center;
   padding: 13px;
   border: 1px solid; 
   border-radius: 50px;
@@ -451,17 +467,12 @@ footer .footbt .btm-menu li a {
 
 /* 상단으로 */
 
+
+
 .go-top {
-  position: relative;
-  width: 70px;
-  height: 70px;
   background-color: #2A3E85;
-  cursor: pointer;
-  z-index: 10;
-  position: fixed;
   right: 30px;
   bottom: 30px;
-  border-radius: 50%;
 }
 .go-top .material-icons {
   position: absolute;
@@ -476,17 +487,11 @@ footer .footbt .btm-menu li a {
   left: 23px;
   color: #fff;
 }
+
 .reserve {
-  position: relative;
-  width: 70px;
-  height: 70px;
-  background-color: #4F5D8F;
-  cursor: pointer;
-  z-index: 10;
-  position: fixed;
   right: 30px;
   bottom: 115px;
-  border-radius: 50%;
+  background-color: #4F5D8F;
 }
 .reserve .material-icons {
   position: absolute;
@@ -501,18 +506,27 @@ footer .footbt .btm-menu li a {
   left: 12px;
   color: #fff;
 }
+
 .data {
+  right: 30px;
+  bottom: 197px;
+  background-color: #7583b6;
+}
+
+.same {
   position: relative;
   width: 70px;
   height: 70px;
-  background-color: #7583b6;
   cursor: pointer;
   z-index: 10;
   position: fixed;
-  right: 30px;
-  bottom: 197px;
   border-radius: 50%;
+  transition: .3s;
 }
+
+
+
+
 .data .material-icons {
   position: absolute;
   top: 13px;
@@ -526,12 +540,9 @@ footer .footbt .btm-menu li a {
   left: 12px;
   color: #fff;
 }
-.data:hover {
+.same:hover {
   background-color: #1c2950;
+  transition: .3s;
 }
-.reserve:hover {
-  background-color: #1c2950;
-}
-.go-top:hover {
-  background-color: #1c2950;
-}
+
+

@@ -156,6 +156,12 @@ nav .navi .bar li:last-child {
   color: #7B98FF;
 }
 
+
+
+
+
+
+
 .grap {
   display: block;
   position: relative;
@@ -170,7 +176,7 @@ nav .navi .bar li:last-child {
   text-align: center;
   font-size: 30px;
   font-weight: 600;
-  margin: 20px 0;
+  margin: 40px 0 20px;
 }
 .grap .inner h3 {
   font-size: 18px;
@@ -197,10 +203,6 @@ nav .navi .bar li:last-child {
 .zoo .inner h2 {
   margin-top: 45px;
 }
-
-
-
-
 .grap .inner table {
   text-align: center;
   border: 1px solid black;
@@ -212,14 +214,125 @@ nav .navi .bar li:last-child {
   border: 1px solid;
   width: 50%;
 }
+.grap .inner table .date {
+  background-color: #aab4d8;
+}
+
+.caution {
+  position: relative;
+  display: block;
+  top: 71px;
+  margin: auto;
+  margin-bottom: 30px;
+  width: 700px;
+  height: 250px;
+}
+.caution .in {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.caution .in h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 10px;
+}
+.caution .in h3::before {
+  content: "";
+  height: 5px;
+  width: 5px;
+  background-color: #041A69;
+  border-radius: 50%;
+  position: absolute;
+  top: 16px;
+  left: 0;
+}
+.caution .in .list {
+  display: block;
+  line-height: 20px;
+}
+
+footer {
+  height: 200px;
+  background-color: #1c2950;
+}
+footer .footop {
+  height: 80px;
+}
+footer .footop .top-menu {
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+}
+footer .footop .top-menu li {
+  position: relative;
+}
+footer .footop .top-menu li a {
+  color: #d9d9d9;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 15px;
+  display: block;
+}
+footer .footop .top-menu li a:hover {
+  color: #7B98FF;
+}
 
 
+footer .footop .top-menu li::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 12px;
+  background-color: #d9d9d9;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
 
+footer .footop .top-menu li:first-child::before {
+  display: none;
+}
 
+footer .footbt .btn-group {
+  width: 1440px;
+  height: 60px;
+  position: relative;
+  margin: 0 auto;
+}
 
+footer .footbt .btn-group .map {
+  position: absolute;
+  top: 5px;
+  left: 654px;
+  width: 137px;
+  padding: 13px;
+  border: 1px solid; 
+  border-radius: 50px;
+  box-sizing: border-box;
+  background-color: #d9d9d9;
+  cursor: pointer;
+  font-size: 16px;
+  color: #000;
+}
+footer .footbt .btn-group .map:hover {
+  background-color: #6C7084;
+  transition: .3s;
+}
 
-
-
+footer .footbt .btm-menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+footer .footbt .btm-menu li {
+  margin-right: 28px;
+  font-size: 12px;
+}
+footer .footbt .btm-menu li a {
+  color: #d9d9d9;
+}
 
 
 
@@ -233,16 +346,9 @@ nav .navi .bar li:last-child {
 /* 상단으로 */
 
 .go-top {
-  position: relative;
-  width: 70px;
-  height: 70px;
   background-color: #2A3E85;
-  cursor: pointer;
-  z-index: 10;
-  position: fixed;
   right: 30px;
   bottom: 30px;
-  border-radius: 50%;
 }
 .go-top .material-icons {
   position: absolute;
@@ -257,17 +363,11 @@ nav .navi .bar li:last-child {
   left: 23px;
   color: #fff;
 }
+
 .reserve {
-  position: relative;
-  width: 70px;
-  height: 70px;
-  background-color: #4F5D8F;
-  cursor: pointer;
-  z-index: 10;
-  position: fixed;
   right: 30px;
   bottom: 115px;
-  border-radius: 50%;
+  background-color: #4F5D8F;
 }
 .reserve .material-icons {
   position: absolute;
@@ -282,18 +382,27 @@ nav .navi .bar li:last-child {
   left: 12px;
   color: #fff;
 }
+
 .data {
+  right: 30px;
+  bottom: 197px;
+  background-color: #7583b6;
+}
+
+.same {
   position: relative;
   width: 70px;
   height: 70px;
-  background-color: #7583b6;
   cursor: pointer;
   z-index: 10;
   position: fixed;
-  right: 30px;
-  bottom: 197px;
   border-radius: 50%;
+  transition: .3s;
 }
+
+
+
+
 .data .material-icons {
   position: absolute;
   top: 13px;
@@ -307,12 +416,9 @@ nav .navi .bar li:last-child {
   left: 12px;
   color: #fff;
 }
-.data:hover {
+.same:hover {
   background-color: #1c2950;
+  transition: .3s;
 }
-.reserve:hover {
-  background-color: #1c2950;
-}
-.go-top:hover {
-  background-color: #1c2950;
-}
+
+

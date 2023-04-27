@@ -8,9 +8,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" 
-  integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 
   <link rel="stylesheet" href="./css/plan.css">
+  <script src="./js/plan_java.js"></script>
 </head>
 <body>
   <!-- HEADER -->
@@ -100,7 +103,7 @@
       <div class="season">
         <h3>동절기(11월 ~ 2월) 운영시간</h3>
         <table>
-          <tr>
+          <tr class="date">
             <td>요일</td>
             <td>시간</td>
           </tr>
@@ -122,7 +125,7 @@
       <div class="season sum">
         <h3>하절기(3월 ~ 10월) 운영시간</h3>
         <table>
-          <tr>
+          <tr class="date">
             <td>요일</td>
             <td>시간</td>
           </tr>
@@ -151,21 +154,21 @@
       <div class="season">
         <h3>동절기(11월 ~ 2월) 운영시간</h3>
         <table>
-          <tr>
+          <tr class="date">
             <td>요일</td>
             <td>시간</td>
           </tr>
           <tr>
             <td>화, 수, 목</td>
-            <td>09:00 ~ 17:00 (입장마감 16:00)</td>
+            <td>10:00 ~ 16:00 (입장마감 15:00)</td>
           </tr>
           <tr>
             <td>월, 금</td>
-            <td>09:00 ~ 18:00 (입장마감 16:00)</td>
+            <td>10:00 ~ 17:00 (입장마감 15:00)</td>
           </tr>
           <tr>
             <td>주말 및 공휴일</td>
-            <td>08:00 ~ 20:00 (입장마감 18:00)</td>
+            <td>09:00 ~ 18:00 (입장마감 17:00)</td>
           </tr>
         </table>
       </div>
@@ -173,7 +176,7 @@
       <div class="season sum">
         <h3>하절기(3월 ~ 10월) 운영시간</h3>
         <table>
-          <tr>
+          <tr class="date">
             <td>요일</td>
             <td>시간</td>
           </tr>
@@ -195,22 +198,59 @@
     </div>
   </section>
 <!-- 시설 이용 시 유의사항 -->
+  <section class="caution">
+    <div class="in">
+      <h3>시설 이용 시 유의사항</h3>
+      <ul class="list">
+        <li>날씨및 외부 상황에 따라 이용시간이 변경 될 수 있습니다.</li>
+        <li>외부음식 반입 금지 및 애완동물 입장 금지</li>
+        <li>시설내 음주행위 금지</li>
+      </ul>
+    </div>
+  </section>
 
+<!-- footer -->
+<footer>
+  <div class="footop">
+    <ul class="top-menu">
+      <li><a href="javascript:void(0)">이용약관</a></li>
+      <li><a href="javascript:void(0)">제휴제안</a></li>
+      <li><a href="javascript:void(0)">고객센터</a></li>
+      <li><a href="javascript:void(0)">사이트맵</a></li>
+      <li><a href="javascript:void(0)">개인정보 처리 방침</a></li>
+    </ul>
+  </div>
 
+  <div class="footbt">
+    <div class="btn-group">
+      <button class="map">찾아오시는 길</button>
+    </div>
+    
+    
+    <ul class="btm-menu">
+      <li><a href="javascript:void(0)">사업자 등록번호 201-81-21515</a></li>
+      <li><a href="javascript:void(0)">인천광역시 남동구 문화로150번길</a></li>
+      <li><a href="javascript:void(0)">대표자 : 김지수</a></li>
+      <li><a href="javascript:void(0)">TEL : 1588-1234</a></li>
+    </ul>
+    
+    
+  </div>
 
+</footer>
 
 
 
 <!-- 하단 고정 -->
-<div class="go-top">
+<div class="go-top same">
   <span class="material-icons">vertical_align_top</span>
   <p>TOP</p>
 </div>
-<div class="reserve">
+<div class="reserve same">
   <span class="material-icons">book_online</span>
   <p>예매하기</p>
 </div>
-<div class="data">
+<div class="data same">
   <a href="./index_plan.html">
     <span class="material-icons">calendar_month</span>
   </a>
