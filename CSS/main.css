@@ -147,6 +147,11 @@ header .inner .search input:focus {
   max-width: 1440px;
   height: 500px;
 }
+.main-slide .swiper .swiper-slide img {
+  width: 1100px;
+  height: 500px;
+  margin: auto;
+}
 
 .main-slide .material-icons {
   font-size: 40px;
@@ -240,14 +245,14 @@ header .inner .search input:focus {
 .event .bg .right_contain {
   position: absolute;
   top: 74px;
-  right: 206px; 
+  right: 140px; 
 }
 
 .event .bg .left_contain {
   position: absolute;
   max-width: 350px;
   top: 150px;
-  left: 214px;
+  left: 140px;
   text-align: center;
 }
 
@@ -297,7 +302,7 @@ header .inner .search input:focus {
   /* background-color: orange; */
 }
 .inform .contain1 {
-  margin: 21px 75px 0 0;
+  margin: 21px 85px 0 0;
 }
 .inform h2 {
   font-size: 25px;
@@ -310,10 +315,16 @@ header .inner .search input:focus {
   cursor: pointer;
 }
 .inform .contain2 {
-  margin: 21px 75px 0 0;
+  margin: 21px 85px 0 0;
 }
 .inform .contain3 {
   margin-top: 21px;
+  width: 250px;
+  height: 200px;
+}
+.inform img {
+  width: 250px;
+  height: 200px;
 }
 
 
@@ -330,13 +341,13 @@ header .inner .search input:focus {
 .event2 .bg .left_contain2 {
   position: absolute;
   top: 131px;
-  left: 226px; 
+  left: 140px; 
 }
 .event2 .bg .right_contain2 {
   position: absolute;
   width: 350px;
   top: 150px;
-  right: 214px;
+  right: 140px;
   text-align: center;
 }
 .event2 .bg .right_contain2 .content4 {
@@ -546,3 +557,12 @@ footer .footbt .btm-menu li a {
 }
 
 
+@media screen and (max-width: 600px) {
+  .event .bg .right_contain,
+  .event2 .bg .left_contain2 {
+    display: none;
+  }
+  .inform .contain1, .contain2, .contain3 {
+    display: none;
+  }
+}
