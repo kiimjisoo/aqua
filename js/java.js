@@ -48,14 +48,42 @@ totopEl.addEventListener('click', function () {
 
 
 const burgerEl = document.querySelector('.hamburger');
-const mediaEl = document.querySelector('.media_menu');
+const mainEl = document.querySelector('.main-menu');
+
+const hamEl = document.querySelector('.ham-menu');
 const closeEl = document.querySelector('.close');
 
 burgerEl.addEventListener('click', function () {
-  mediaEl.classList.add('avtive');
+  hamEl.classList.add('active');
 });
 
 closeEl.addEventListener('click', function() {
-  mediaEl.classList.remove('active');
+  hamEl.classList.remove('active');
 });
+
+gsap.to(".floating1", 2, {
+  y: 20,
+  repeat: -1,
+  yoyo: true,
+  ease: Power1.easeInOut
+});
+gsap.to(".floating2", 2.5, {
+  y: 10,
+  repeat: -1,
+  yoyo: true,
+  ease: Power1.easeInOut
+});
+gsap.to(".floating3", 2, {
+  y: 25,
+  repeat: -1,
+  yoyo: true,
+  ease: Power1.easeInOut
+});
+gsap.to(".floating4", 3, {
+  y: 20,
+  repeat: -1,
+  yoyo: true,
+  ease: Power1.easeInOut
+});
+
 

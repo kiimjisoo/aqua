@@ -14,6 +14,8 @@ img {
   margin: 0 auto;
   position: relative;
 }
+
+/* HEADER */
 header {
   background-color: #fff;
   border-bottom: 1px solid #424242;
@@ -23,7 +25,7 @@ header {
   z-index: 9;
 }
 header > .inner {
-  width: 1440px;
+  max-width: 1200px;
   height: 70px;
 }
 header .logo {
@@ -157,11 +159,6 @@ nav .navi .bar li:last-child {
 }
 
 
-
-
-
-
-
 .grap {
   display: block;
   position: relative;
@@ -170,7 +167,7 @@ nav .navi .bar li:last-child {
 }
 .grap .inner {
   position: relative;
-  width: 1440px;
+  max-width: 1200px;
 }
 .grap .inner h2 {
   text-align: center;
@@ -185,7 +182,7 @@ nav .navi .bar li:last-child {
 .grap .inner .season {
   display: flex;
   flex-direction: column;
-  width: 700px;
+  max-width: 700px;
   margin: auto;
   position: relative;
   margin-bottom: 20px;
@@ -219,38 +216,41 @@ nav .navi .bar li:last-child {
 }
 
 .caution {
-  position: relative;
   display: block;
+  position: relative;
   top: 71px;
   margin: auto;
   margin-bottom: 30px;
   width: 700px;
   height: 250px;
 }
-.caution .in {
-  display: flex;
-  flex-direction: column;
+.caution .inner {
   margin: auto;
+  position: relative;
+  max-width: 1200px;
 }
-.caution .in h3 {
+.caution .inner h3 {
   font-size: 18px;
   font-weight: 600;
   margin: 10px 10px;
 }
-.caution .in h3::before {
+.caution .inner h3::before {
   content: "";
   height: 5px;
   width: 5px;
   background-color: #041A69;
   border-radius: 50%;
   position: absolute;
-  top: 16px;
+  top: 8px;
   left: 0;
 }
-.caution .in .list {
+.caution .inner .list {
   display: block;
   line-height: 20px;
 }
+
+
+/* FOOER */
 
 footer {
   height: 200px;
@@ -277,8 +277,6 @@ footer .footop .top-menu li a {
 footer .footop .top-menu li a:hover {
   color: #7B98FF;
 }
-
-
 footer .footop .top-menu li::before {
   content: "";
   display: block;
@@ -290,23 +288,22 @@ footer .footop .top-menu li::before {
   bottom: 0;
   margin: auto;
 }
-
 footer .footop .top-menu li:first-child::before {
   display: none;
 }
-
 footer .footbt .btn-group {
-  width: 1440px;
+  max-width: 1200px;
   height: 60px;
   position: relative;
   margin: 0 auto;
 }
-
 footer .footbt .btn-group .map {
   position: absolute;
-  top: 5px;
-  left: 654px;
-  width: 137px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 140px;
+  text-align: center;
   padding: 13px;
   border: 1px solid; 
   border-radius: 50px;
@@ -320,10 +317,10 @@ footer .footbt .btn-group .map:hover {
   background-color: #6C7084;
   transition: .3s;
 }
-
 footer .footbt .btm-menu {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 footer .footbt .btm-menu li {
@@ -333,14 +330,6 @@ footer .footbt .btm-menu li {
 footer .footbt .btm-menu li a {
   color: #d9d9d9;
 }
-
-
-
-
-
-
-
-
 
 
 /* 상단으로 */
@@ -363,7 +352,6 @@ footer .footbt .btm-menu li a {
   left: 23px;
   color: #fff;
 }
-
 .reserve {
   right: 30px;
   bottom: 115px;
@@ -382,13 +370,11 @@ footer .footbt .btm-menu li a {
   left: 12px;
   color: #fff;
 }
-
 .data {
   right: 30px;
   bottom: 197px;
   background-color: #7583b6;
 }
-
 .same {
   position: relative;
   width: 70px;
@@ -399,10 +385,6 @@ footer .footbt .btm-menu li a {
   border-radius: 50%;
   transition: .3s;
 }
-
-
-
-
 .data .material-icons {
   position: absolute;
   top: 13px;
@@ -420,5 +402,82 @@ footer .footbt .btm-menu li a {
   background-color: #1c2950;
   transition: .3s;
 }
+
+/* 햄버거 */
+header .inner .hamburger {
+  display: none;
+  width: 60px;
+  cursor: pointer;
+}
+header .inner .hamburger:hover {
+  color: #7B98FF;
+}
+
+header .inner .hamburger .material-icons {
+  font-size: 40px;
+  line-height: 70px;
+}
+/* 햄버거 하위 메뉴 */
+header .inner .ham-menu {
+  /* display: none; */
+  background-color: rgb(236, 244, 255);
+  height: 70px;
+  top: -50%;
+  position: fixed;
+  display: flex;
+  left: 0;
+  right: 0;
+  /* transition: .6s; */
+}
+header .inner .ham-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 18px;
+  font-weight: 600;
+  color: #041A69;
+  line-height: 50px;
+}
+header .inner .ham-menu ul li {
+  padding: 0 10px;
+  cursor: pointer;
+}
+header .inner .ham-menu.active {
+  top: 70px;
+}
+header .inner .ham-menu div {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .inner .ham-menu .material-icons {
+  font-size: 40px;
+  color: #041A69;
+}
+
+@media screen and (max-width: 992px) {
+  header .inner .main-menu {
+    display: none;
+  }
+  header .inner .hamburger {
+    display: block;
+    margin: auto;
+  }
+  
+  header .hamburger.active,
+  header .closes.active {
+    display: block;
+  }
+  .grap .inner {
+    margin: 0 30px;
+  }
+  .caution .inner {
+    margin: 0 30px;
+  }
+
+}
+
 
 
