@@ -322,6 +322,12 @@ header .inner .search input:focus {
   cursor: pointer;
   width: calc(100% - 8px);
 }
+.inform .contain1:hover,
+.inform .contain2:hover,
+.inform .contain3:hover {
+  background-color: #d9d9d9;
+}
+
 .inform .contain3 {
   margin-top: 21px;
 }
