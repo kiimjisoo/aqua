@@ -429,7 +429,7 @@ header .inner .ham-menu {
   right: 0;
   /* transition: .6s; */
 }
-header .inner .ham-menu ul {
+/*header .inner .ham-menu ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -438,11 +438,8 @@ header .inner .ham-menu ul {
   font-weight: 600;
   color: #041A69;
   line-height: 50px;
-}
-header .inner .ham-menu ul li {
-  padding: 0 10px;
-  cursor: pointer;
-}
+}*/
+
 header .inner .ham-menu.active {
   top: 70px;
 }
@@ -456,6 +453,33 @@ header .inner .ham-menu .material-icons {
   font-size: 40px;
   color: #041A69;
 }
+
+header .inner .ham-menu .secondmenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+}
+
+header .inner .ham-menu .secondmenu .item__name2 {
+  padding: 0 20px;
+  cursor: pointer;
+  color: #1c2950;
+}
+header .inner .ham-menu .secondmenu .item__name2:hover {
+  color: #7B98FF;
+}
+
+header .inner .ham-menu .secondmenu ul {
+  display: none;
+ 
+}
+header .inner .ham-menu .secondmenu .item__name2:hover ul {
+  display: block;
+}
+
 
 @media screen and (max-width: 992px) {
   header .inner .main-menu {

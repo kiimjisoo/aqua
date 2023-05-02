@@ -545,9 +545,9 @@ header .ham-menu .item2 {
   justify-content: center;
   margin: auto;
   line-height: 70px;
-  /* background-color: rosybrown; */
+  background-color: rosybrown;
 }
-/* header .inner .ham-menu .burger-menu .ham__name {
+header .inner .ham-menu .burger-menu .ham__name {
   font-size: 20px;
   font-weight: 600;
   color: #1c2950;
@@ -557,15 +557,15 @@ header .inner .ham-menu .burger-menu .ham__name:hover{
   color: #7B98FF;
 }
 header .ham-menu .burger-menu .item2 ul {
-  /* display: none; */
-  /* background-color: #fff;
+  display: none;
+  background-color: #fff;
   text-align: center;
   font-size: 12px;
   padding: 15px 10px;
 }
 header .inner .ham-menu .burger-menu .ham__name:hover li {
   display: block;
-} */ */
+} 
 
 
 
