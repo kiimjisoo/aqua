@@ -476,8 +476,11 @@ header .inner .ham-menu .material-icons {
   .caution .inner {
     margin: 0 30px;
   }
-
 }
-
+@media screen and (max-width: 600px) {
+  header .inner .ham-menu ul {
+    font-size: 14px;
+  }
+}
 
 

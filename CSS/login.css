@@ -23,11 +23,10 @@ img {
 }
 .inner .menu li a {
   padding: 25px;
-  color: #256fff;
-}
-
-.inner .menu li a:hover {
   color: #041A69;
+}
+.inner .menu li a:hover {
+  color: #256fff;
 }
 .inner .menu li::before {
   content: "";
@@ -42,8 +41,6 @@ img {
 .inner .menu li:first-child::before {
   display: none;
 }
-
-
 .log {
   max-width: 1200px;
   width: 100%;
@@ -77,7 +74,6 @@ img {
 .log .container .sign-in input {
   margin: 5px;
 }
-
 .log .container .sign-in .textbox .logbtn {
   border-radius: 20px;
   margin-top: 30px;
@@ -85,7 +81,6 @@ img {
   color: #fff;
   font-weight: 600;
 }
-
 .log .container .sign-in .textbox {
   display: flex;
   flex-direction: column;
@@ -93,7 +88,6 @@ img {
   align-items: center;
   margin-bottom: 10px;
 }
-
 .log .find .find-menu {
   display: flex;
   justify-content: center;
@@ -107,7 +101,6 @@ img {
 .log .find .find-menu li a:hover {
   color: #041A69;
 }
-
 .log .sns {
   text-align: center;
   margin-top: 70px;
@@ -138,16 +131,3 @@ img {
   background-color: #fef01b;
   color: #000;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

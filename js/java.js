@@ -1,30 +1,23 @@
-
-
-
-
+// 공지 슬라이드
 new Swiper('.notice .swiper', {
   direction: 'vertical',
   loop: true,
   autoplay: true,
 }); 
-
-
+// 메인 이미지
 new Swiper('.main-slide .swiper', {
   direction: 'horizontal',
   loop: true,
   autoplay: {
     delay: 5000
   },
-
   pagination: {
     el: '.swiper-pagination',
   },
-
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
 });
 
 const spyEls = document.querySelectorAll('section.scroll-spy');
@@ -38,21 +31,18 @@ new ScrollMagic
   .addTo(new ScrollMagic.Controller()); 
 });
 
-
 const totopEl = document.querySelector('.go-top');
 totopEl.addEventListener('click', function () {
   gsap.to(window, 0.5, {
     scrollTo: 0
   });
-})
-
+});
 
 const burgerEl = document.querySelector('.hamburger');
 const mainEl = document.querySelector('.main-menu');
 
 const hamEl = document.querySelector('.ham-menu');
 const closeEl = document.querySelector('.close');
-
 burgerEl.addEventListener('click', function () {
   hamEl.classList.add('active');
 });
@@ -85,5 +75,3 @@ gsap.to(".floating4", 3, {
   yoyo: true,
   ease: Power1.easeInOut
 });
-
-
