@@ -60,7 +60,7 @@ img {
   color: #256fff;
 }
 .log .container .sign-in input,
-.log .container .sign-in .textbox .logbtn {
+.log .container .sign-in .textbox .log-btn {
   max-width: 450px;
   width: 100%;
   height: 40px;
@@ -74,7 +74,7 @@ img {
 .log .container .sign-in input {
   margin: 5px;
 }
-.log .container .sign-in .textbox .logbtn {
+.log .container .sign-in .textbox .log-btn {
   border-radius: 20px;
   margin-top: 30px;
   background-color: #256fff;

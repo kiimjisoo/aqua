@@ -538,85 +538,6 @@ header .inner .ham-menu {
   left: 0;
   right: 0;
 }
-
-header .ham-menu .item2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto;
-  line-height: 70px;
-  background-color: rosybrown;
-}
-header .inner .ham-menu .burger-menu .ham__name {
-  font-size: 20px;
-  font-weight: 600;
-  color: #1c2950;
-  margin: 0 20px;
-}
-header .inner .ham-menu .burger-menu .ham__name:hover{
-  color: #7B98FF;
-}
-header .ham-menu .burger-menu .item2 ul {
-  display: none;
-  background-color: #fff;
-  text-align: center;
-  font-size: 12px;
-  padding: 15px 10px;
-}
-header .inner .ham-menu .burger-menu .ham__name:hover li {
-  display: block;
-} 
-
-
-
-
-/* 
-header .main-menu .item  {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-header .main-menu .item .item__name {
-  padding: 10px 35px 10px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #041A69;
-  line-height: 50px;
-}
-header .main-menu .item .item__name:hover {
-  color: #7B98FF;
-}
-header .main-menu .item ul {
-  width: 100%;
-  background-color: rgba(250, 250, 250, .8);
-  padding: 15px 10px;
-  font-size: 12px;
-  text-align: center;
-  display: none;
-}
-header .main-menu .item:hover ul {
-  display: block;
-}
-header .main-menu .item > ul > li {
-  padding: 8px;
-  cursor: pointer;
-}
-header .main-menu .item > ul > li > a {
-  color: #041A69;
-}
-header .main-menu .item > ul > li:hover {
-  color: #7B98FF;
-}
-header .main-menu .item > ul > li > a:hover {
-  color: #7B98FF;
-} */
-
-
-
-
-
-
-
 header .inner .ham-menu.active {
   top: 70px;
 }
@@ -630,6 +551,54 @@ header .inner .ham-menu .material-icons {
   font-size: 40px;
   color: #041A69;
 }
+header .secondmenu {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+/* 하단메뉴 정렬 */
+header .secondmenu .item2  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* 메인메뉴 디자인 */
+header .secondmenu .item2 .item__name2 {
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #041A69;
+  line-height: 50px;
+}
+/* 메인 메뉴 hover 색 변환 */
+header .secondmenu .item2 .item__name2:hover {
+  color: #7B98FF;
+}
+header .secondmenu .item2 ul {
+  width: 100%;
+  background-color: rgba(250, 250, 250, .8);
+  padding: 15px 10px;
+  font-size: 12px;
+  text-align: center;
+  display: none;
+}
+header .secondmenu .item2:hover ul {
+  display: block;
+}
+header .secondmenu .item2 > ul > li {
+  padding: 8px;
+  cursor: pointer;
+}
+header .secondmenu .item2 > ul > li > a {
+  color: #041A69;
+}
+header .secondmenu .item2 > ul > li:hover {
+  color: #7B98FF;
+}
+header .secondmenu .item2 > ul > li > a:hover {
+  color: #7B98FF;
+}
+
 @media screen and (max-width: 992px) {
   header .inner .main-menu {
     display: none;
@@ -663,5 +632,10 @@ header .inner .ham-menu .material-icons {
     display: none;
   }
   header .inner .ham-menu ul {
+    font-size: 10px;
+  }
+  header .secondmenu .item2 .item__name2 {
     font-size: 14px;
-  }}
+    padding: 10px 10px;
+  }
+}
