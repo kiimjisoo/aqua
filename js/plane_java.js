@@ -13,8 +13,6 @@ closeEl.addEventListener('click', function() {
   hamEl.classList.remove('active');
 });
 
-
-
 const totopEl = document.querySelector('.go-top');
 totopEl.addEventListener('click', function () {
   gsap.to(window, 0.5, {
