@@ -78,6 +78,14 @@ header .main-menu .item > ul > li {
   padding: 8px;
   cursor: pointer;
 }
+header .main-menu .item > ul > li > a {
+  color: #041A69;
+}
+header .main-menu .item > ul > li > a:hover {
+  color: #7B98FF;
+}
+
+
 /* li hover 시 글자색 변환 */
 header .main-menu .item > ul > li:hover {
   color: #7B98FF;
