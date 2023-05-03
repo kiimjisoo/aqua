@@ -10,11 +10,9 @@ img {
   display: block;
 }
 .inner {
-  /* width: 1200px; */
   margin: 0 auto;
   position: relative;
 }
-
 /* HEADER */
 header {
   background-color: #fff;
@@ -48,14 +46,12 @@ header .main-menu .item  {
 }
 /* 메인메뉴 디자인 */
 header .main-menu .item .item__name {
-  /* display: block; */
   padding: 10px 35px 10px;
   font-size: 20px;
   font-weight: 600;
   color: #041A69;
   line-height: 50px;
 }
-
 /* 메인 메뉴 hover 색 변환 */
 header .main-menu .item .item__name:hover {
   color: #7B98FF;
@@ -63,7 +59,6 @@ header .main-menu .item .item__name:hover {
 header .main-menu .item ul {
   width: 100%;
   background-color: rgba(250, 250, 250, 80);
-  /* background-color: orange; */
   padding: 15px 10px;
   font-size: 12px;
   text-align: center;
@@ -84,13 +79,10 @@ header .main-menu .item > ul > li > a {
 header .main-menu .item > ul > li > a:hover {
   color: #7B98FF;
 }
-
-
 /* li hover 시 글자색 변환 */
 header .main-menu .item > ul > li:hover {
   color: #7B98FF;
 }
-
 /* SEARCH */
 header .inner .search {
   position: absolute;
@@ -114,17 +106,14 @@ header .inner .search .material-icons {
 header .inner .search input:focus {
   border: 2px solid #041A69;
 }
-
 nav {
   position: relative;
   top: 71px;
   border-bottom: 1px solid #d9d9d9;
-  /* background-color: orange; */
 }
 nav .navi {
   height: 60px;
   width: 800px;
-  /* background-color: royalblue; */
   margin: 0 auto;
   display: flex;
 }
@@ -150,8 +139,6 @@ nav .navi .material-icons::before {
 nav .navi .material-icons:hover {
   color: #7B98FF;
 }
-
-
 nav .navi .bar {
   display: flex;
   line-height: 60px;
@@ -165,8 +152,6 @@ nav .navi .bar li {
 nav .navi .bar li:last-child {
   color: #7B98FF;
 }
-
-
 .grap {
   display: block;
   position: relative;
@@ -222,7 +207,6 @@ nav .navi .bar li:last-child {
 .grap .inner table .date {
   background-color: #aab4d8;
 }
-
 .caution {
   display: block;
   position: relative;
@@ -256,10 +240,7 @@ nav .navi .bar li:last-child {
   display: block;
   line-height: 20px;
 }
-
-
 /* FOOER */
-
 footer {
   height: 200px;
   background-color: #1c2950;
@@ -338,10 +319,7 @@ footer .footbt .btm-menu li {
 footer .footbt .btm-menu li a {
   color: #d9d9d9;
 }
-
-
 /* 상단으로 */
-
 .go-top {
   background-color: #2A3E85;
   right: 30px;
@@ -410,7 +388,6 @@ footer .footbt .btm-menu li a {
   background-color: #1c2950;
   transition: .3s;
 }
-
 /* 햄버거 */
 header .inner .hamburger {
   display: none;
@@ -437,8 +414,6 @@ header .inner .ham-menu {
   right: 0;
   /* transition: .6s; */
 }
-
-
 header .inner .ham-menu.active {
   top: 70px;
 }
@@ -530,5 +505,3 @@ header .secondmenu .item2 > ul > li > a:hover {
     padding: 10px 10px;
   }
 }
-
-

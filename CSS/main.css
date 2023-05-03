@@ -308,7 +308,6 @@ header .inner .search input:focus {
 .inform .contain1:hover,
 .inform .contain2:hover,
 .inform .contain3:hover {
-  /* border-radius: 50%; */
   background-color: #d9d9d9;
 }
 /* EVENT2 */
